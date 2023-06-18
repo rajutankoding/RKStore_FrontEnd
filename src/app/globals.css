@@ -17,6 +17,11 @@
 }
 
 body {
+  /* overflow: auto; */
+  /* overflow-y: auto; */
+  height: screen;
+  scroll-behavior: smooth;
+  /* height: 600px; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +30,70 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.layer {
+  background-color: #050505;
+  overflow-y: scroll;
+  height: 600px;
+}
+.mainContent {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+.navigator {
+  /* position: absolute; */
+  overflow: hidden;
+}
+
+.itemCard {
+  display: 1 1 21rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.itemCard p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: larger;
+  color: cadetblue;
+}
+
+.itemList {
+  /* display: -webkit-box; */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: bold;
+  /* font-size: larger; */
+  /* color: cadetblue; */
+  overflow: hidden;
+  width: 400px;
+}
+/* .cardDashboard { */
+/* position: absolute; */
+
+/* gap: 1rem; */
+/* } */
